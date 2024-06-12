@@ -6,16 +6,21 @@
 
 header {
     position:fixed;
-    left: 75px;
+    left: 40px;
     top:0;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.222);
-    width:calc(100vw - 75px);
+    width:calc(100vw - 40px);
     text-align: right ;
+    height:50px;
+}
+main {
+    margin-top: 50px;
 }
 .bottom-section {
     height:100px;
     background-color: blue;
+    display: flex;
 }
 
 .top-section {
@@ -25,16 +30,31 @@ header {
 }
 
 .sidebar {
-    width: 75px;
+    width: 40px;
     background-color: black;
 }
 .col-10 {
     background-color: black;
     width: 100%;
+    height: 100%;
     color: #ffff;
 }
+.left-col, .right-col {
+    width:15%;
+    height:100%;
+    background-color: orange;
+    border: 1px solid black;
+}
+
+.center-col {
+    width:70%;
+    height:100%;
+    background-color: salmon;
+    border:1px solid black;
+}
+
 .main-content {
-    width: calc(100vw - 75px);
+    width: calc(100vw - 40px);
     background-color: brown;
 }
 
@@ -57,4 +77,5 @@ header {
     header {
         left:250px;
     }
+
 }
