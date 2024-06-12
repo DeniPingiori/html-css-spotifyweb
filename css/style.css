@@ -51,8 +51,29 @@ main {
     height:100%;
     background-color: salmon;
     border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.playbar-controls {
+    display: flex;
+    width:100%;
+}
+
+.playbar-controls .current
+.playbar-controls .end {
+    width: 10% ;
+    background-color: #ffff;
+    border: 1px solid black;
+}
+
+.playbar-controls .playbar {
+    width: 80% ;
+    background-color: goldenrod;
+    border: 1px solid black;
+}
 .main-content {
     width: calc(100vw - 40px);
     background-color: brown;
